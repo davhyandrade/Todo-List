@@ -4,9 +4,9 @@
 
 ## Todo List
 
-<img src="https://i.postimg.cc/prgzH5Yy/bank-small.png" alt="bank-small" width="100%">
-
 Aplicação desevolvida com a finalidade de consumir uma API no NextJS, afim de compreender as funções `getStaticProps`, `getServerSideProps` e `getStaticPaths`, em que foi realizado uma `Todo List` ( lista de afazeres ) da API JSONplaceholder, ao qual além de listar todos os todos ainda é possivel acessar individualmente.
+
+![todo](https://user-images.githubusercontent.com/109045257/197404421-4ab7ffeb-a531-4184-a0e6-d6109df72c21.png)
 
 # Desenvolvimento
 
