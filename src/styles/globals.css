@@ -25,6 +25,13 @@ body #__next {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+}
+@media only screen and (max-width: 800px) {
+  .field-containers {
+    margin-top: 2vh;
+    width: 95%;
+  }
 }
 .field-containers .container {
   display: flex;
@@ -36,8 +43,12 @@ body #__next {
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.2);
   cursor: pointer;
-  margin: 10px 5px;
   position: relative;
+}
+@media only screen and (max-width: 800px) {
+  .field-containers .container {
+    width: 100%;
+  }
 }
 .field-containers .container:hover {
   transition: 1s;
@@ -84,6 +95,11 @@ body #__next {
   width: 50%;
   position: relative;
 }
+@media only screen and (max-width: 800px) {
+  .field-comments {
+    width: 95%;
+  }
+}
 .field-comments .comments {
   width: 100%;
   background: white;
@@ -93,12 +109,22 @@ body #__next {
   border: 1px solid rgba(128, 128, 128, 0.2);
   position: relative;
 }
+@media only screen and (max-width: 800px) {
+  .field-comments .comments {
+    padding: 35px;
+  }
+}
 .field-comments .comments span {
   position: absolute;
   top: 15%;
   right: 7%;
   font-size: 0.8rem;
   color: #333;
+}
+@media only screen and (max-width: 800px) {
+  .field-comments .comments span {
+    top: 10%;
+  }
 }
 .field-comments .comments span span {
   font-weight: bold;
@@ -109,6 +135,12 @@ body #__next {
   font-size: 1.8rem;
   color: #333;
   margin-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .field-comments .comments h1 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
 }
 .field-comments .comments h1::after {
   content: "";

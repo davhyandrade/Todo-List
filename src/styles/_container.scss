@@ -1,69 +1,82 @@
 .field-containers {
-    width: 75%;
-    margin-top: 10vh;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 75%;
+  margin-top: 10vh;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 32%;
-        padding: 30px;
-        background: white;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        cursor: pointer;
-        margin: 10px 5px;
-        position: relative;
-
-        &:hover {
-            transition: 1s;
-            transform: scale(1.1);
-            background: #333;
-            z-index: 99;
-
-            span {
-                transition: 1s;
-                color: #eee;
-            }
-
-            h1 {
-                transition: 1s;
-                color: white;
-            }
-        }
-
-        span {
-            position: absolute;
-            top: 10%;
-            right: 7%;
-            font-size: 0.7rem;
-            color: #333;
-        }
-
-        h1 {
-            font-weight: normal;
-            font-size: 1.3rem;
-            color: #333;
-            margin-top: 20px;
-
-            &::after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: 1px;
-                background: gray;
-                margin-top: 20px;
-            }
-        }
-
-        p {
-            font-size: 15px;
-            color: gray;
-            margin-top: 10px;
-        }
+  @media only screen and (max-width: 800px) {
+    & {
+      margin-top: 2vh;
+      width: 95%;
     }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+    position: relative;
+
+    @media only screen and (max-width: 800px) {
+      & {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+      background: #333;
+      z-index: 99;
+
+      span {
+        transition: 1s;
+        color: #eee;
+      }
+
+      h1 {
+        transition: 1s;
+        color: white;
+      }
+    }
+
+    span {
+      position: absolute;
+      top: 10%;
+      right: 7%;
+      font-size: 0.7rem;
+      color: #333;
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 1.3rem;
+      color: #333;
+      margin-top: 20px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: gray;
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      color: gray;
+      margin-top: 10px;
+    }
+  }
 }

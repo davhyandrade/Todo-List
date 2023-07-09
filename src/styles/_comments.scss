@@ -1,73 +1,98 @@
 .field-comments {
-    width: 50%;
+  width: 50%;
+  position: relative;
+
+  @media only screen and (max-width: 800px) {
+    & {
+      width: 95%;
+    }
+  }
+
+  .comments {
+    width: 100%;
+    background: white;
+    padding: 50px;
+    margin-top: 10vh;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
     position: relative;
-    
-    .comments {
-        width: 100%;
-        background: white;
-        padding: 50px;
-        margin-top: 10vh;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        position: relative;
-    
-        span {
-            position: absolute;
-            top: 15%;
-            right: 7%;
-            font-size: 0.8rem;
-            color: #333;
-    
-            span {
-                font-weight: bold;
-                margin-right: 20px;
-            }
-        }
-        
-        h1 {
-            font-weight: normal;
-            font-size: 1.8rem;
-            color: #333;
-            margin-top: 20px;
-    
-            &::after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: 1px;
-                background: gray;
-                margin-top: 20px;
-            }
-        }
-    
-        p {
-            font-size: 15px;
-            color: gray;
-            margin-top: 10px;
-        }
+
+    @media only screen and (max-width: 800px) {
+      & {
+        padding: 35px;
+      }
     }
 
-    > button {
-        padding: 12px 50px;
-        background: white;
-        color: rgba(128, 128, 128, 0.5);
-        border: none;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        margin-top: 10px;
-        cursor: pointer;
-        width: 100%;
+    span {
+      position: absolute;
+      top: 15%;
+      right: 7%;
+      font-size: 0.8rem;
+      color: #333;
 
-        &:hover {
-            transition: 2s;
-            color: white;
-            background: gray;
+      @media only screen and (max-width: 800px) {
+        & {
+          top: 10%;
         }
+      }
 
-        &:active {
-            transition: 0.1s;
-            color: white;
-            background: #333;
-        }
+      span {
+        font-weight: bold;
+        margin-right: 20px;
+      }
     }
+
+    h1 {
+      font-weight: normal;
+      font-size: 1.8rem;
+      color: #333;
+      margin-top: 20px;
+
+      @media only screen and (max-width: 800px) {
+        & {
+          font-size: 1.5rem;
+          margin-top: 30px;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: gray;
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      color: gray;
+      margin-top: 10px;
+    }
+  }
+
+  > button {
+    padding: 12px 50px;
+    background: white;
+    color: rgba(128, 128, 128, 0.5);
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      transition: 2s;
+      color: white;
+      background: gray;
+    }
+
+    &:active {
+      transition: 0.1s;
+      color: white;
+      background: #333;
+    }
+  }
 }
